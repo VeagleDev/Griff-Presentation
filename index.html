@@ -31,20 +31,20 @@
                 </a>
             </li>
             <li class="li-top">
-                <a href="download.html">
+                <a href="download.html" class="fade">
                     Téléchargement
                 </a>
                 
             </li>
             <li class="li-top">
-                <a href="#">
+                <a href="#more">
                     Voir plus
                 </a>
                 
             </li>
         </ul>
     </header>
-    <main>
+    <main id="more">
         <nav class="presentation">
 
             <div class="pres-text">
@@ -136,7 +136,7 @@
             </div>
         </nav>
 
-        <button class="download" onclick="
+        <button class="download fade" onclick="
             window.location.href = `download.html`
         ">Télécharger</button>
 
@@ -148,6 +148,20 @@
             <p>Mentions légales</p>
         </div>
     </footer>
+	
+	
+	<script>
+	
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+	</script>
     
 </body>
 </html>
