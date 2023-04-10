@@ -222,3 +222,25 @@ footer {
 .footer-text p {
     margin: 0 20px;
 }
+
+.ins-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+.ins-list p {
+    margin: 0;
+}
+.ins-list p.smaller {
+    margin-top: 6px;
+    font-size: 0.8em;
+}
+.down-infos {
+    text-align: center;
+    margin-top: 20px;
+}
+.down-infos p {
+    color: #940000;
+    margin: 0;
+}
